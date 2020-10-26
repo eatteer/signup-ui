@@ -1,0 +1,112 @@
+:root {
+  --primary: #4656df;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #353535;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 16px auto;
+  /* border: 1px solid green; */
+}
+
+.image {
+  object-fit: contain;
+  /* border: 1px solid red; */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid blue; */
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.email-form {
+  margin-bottom: 16px;
+}
+
+.form-field input {
+  background-color: transparent;
+  border: none;
+  margin-top: 8px;
+  border-bottom: 2px solid var(--primary);
+}
+
+.form-field input:focus {
+  outline: none;
+}
+
+.forgot-password {
+  text-align: center;
+}
+
+.forgot-password a {
+  color: var(--primary);
+}
+
+.login-button {
+  background-color: var(--primary);
+  color: white;
+  padding: 16px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+}
+
+.new-user {
+  text-align: center;
+}
+
+.new-user a {
+  color: var(--primary);
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .image {
+    display: none;
+  }
+
+  .container {
+    max-width: 60%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .image {
+    display: block;
+    width: 50%;
+    margin-right: 32px;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+  }
+}
